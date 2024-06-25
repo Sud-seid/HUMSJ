@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUMSJ Webpage</title>
+    <style>
+        body {
+    font-family: sans-serif;
+    margin: 0;
+    padding-bottom: 30px;
+    background-color:  white;
+    color: #0B260B;
+}
+h1{
+    color: #08612a;
+}
+h2{
+    color: #0c2808;
+}
+h4{
+    color:  #194B19;
+}
+header {
+    background-color: #194B19; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000px;
+    width: 100%;
+}
+.home-1{
+    text-align: center;
+    padding: 100px 0;
+}
+header img{
+    padding-left: 0;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+nav {
+    background-color: #194B19;
+    color: black;
+    padding-right: 50px;
+    padding-top: 0;
+    text-align: center;
+}
+nav a {
+    color: #091609;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.resources-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 40px;
+}
+.resource-item {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2C612C;
+}
+#resources{
+    width: 1000px;
+    height: 350px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-1{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #effaf3e5;
+    /* margin-bottom: 0; */
+    color: #061506;
+}
+li{
+    padding-bottom: 10px;
+}
+.about-us{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .resources-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+} */
+.resource-item.rectangular {
+    border-radius: 5px;
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+a:link{
+    color:#194B19;
+    text-decoration: none;
+}
+a:visited{
+    color: #0b290b;
+}
+a:hover{
+    color: rgba(0, 255, 255, 0.523);
+    text-decoration: underline;
+    font-weight: bold;
+}
+a:active{
+    background-color: #548754;
+    font-style: italic;
+}
+nav a:link {
+    font-size: 15px;
+     /* margin-top: 5px;  */
+    margin-right: auto;
+    display: inline-block;
+}
+.resources-container a{
+    color: #0b260b;
+}
+footer {
+    background-color:  #194B19;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Mosque Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#resources">Resources</a>
+            <a href="#about">About</a>
+            <a href="#Contact">Contact Us</a>
+        </nav>
+    </header>
+
+<section id="home" class="home-1">
+    <h1>HARAMAYA UNIVERSITY MUSLIM STUDENT'S JEMA'A</h1>
+    <p>Welcome to the HUMSJ webpage! Here you will find information about our mission, resources for learning, and our history.</p>
+    <p>Check out the <a href="#resources">Resources</a> section for useful links and study materials.</p>
+    <p>Learn more <a href="#about">About</a> us and our goals.</p>
+</section>
+
+<section id="resources">
+    <h2>Resources</h2>
+   <Div class="resources-container">
+    <Div class="resource-item rectangular">
+    <h3>Islamic Books</h3>
+    <ul>
+        <li><a href="https://quran.com/en" target="_blank"> Qur'an</a></li>
+        <li><a href="https://www.muslim-library.com/dl/books/English_ArRaheeq_AlMakhtum_THE_SEALED_NECTAR.pdf" target="_blank">The Sealed Nectar</a></li>
+        <li><a href="https://www.allahsword.com/free_islamic_books.html" target="_blank">Free Islamic Books</a></li>
+    </ul>
+</Div>
+<Div class="resource-item rectangular">
+    <h3>Lectures</h3>
+    <ul>
+        <li><a href="https://freeislamiclectures.com/" target="_blank">Free Islamic lectures</a></li>
+        <li><a href="http://www.halaltube.com/" target="_blank">Islamic videos</a></li>
+    </ul>
+</Div>
+    <Div class="resource-item rectangular">
+    <h3>Websites</h3>
+    <ul>
+        <li><a href="https://www.islamweb.net" target="_blank">IslamWeb</a></li>
+        <li><a href="https://binbaz.org.sa/" target="_blank">Ibn Baz</a></li>
+    </ul>
+</Div>
+<Div class="resource-item rectangular">
+    <h3>Study Materials</h3>
+    <ul>
+        <li><a href="https://free-islamic-course.org/" target="_blank">Islamic Course</a></li>
+        <li><a href="https://modestycollection.com.au/collections/free-materials" target="_blank">FREE Materials</a></li>
+    </ul>
+</Div>
+</Div>
+</section>
+
+<section id="about" class="about-us">
+    <h2>About Us</h2>
+    <p>Haramaya University Muslim Students Jema'a (HUMSJ) is a student-led organization that aims to promote Islamic values and principles among the students of Haramaya University. The organization was established to provide a platform for Muslim students to come together, share their experiences, and strengthen their faith.</p>
+    <ul>
+    
+            <h4>VISION</h4>
+          <li> <p>The vision of HUMSJ is to become the leading university jema'a in the country and provide full services for both students and the local community. The organization believes in creating healthy and competent citizens who are knowledgeable, ethical, and disciplined. HUMSJ's mission is to enrich the students with Islamic knowledge as well as secular education and create a conducive environment for them to participate in various social services.</p>
+        </li>
+       
+            <h4>MISSION</h4>
+            <li> 
+                working toward creating healthy and competent citizen to increase his knowledge and affiliation by using various options to enrich the students with islamic knowledge as well as secular education.
+            </li> 
+            <li>
+                working toward creating conducive environment for students to participate in various social services and increasing their community engagement by enhancing them to be a magnificent role model to others.
+            </li>
+       
+            <h4>GOAL</h4>
+            <li><p>
+                The goal of HUMSJ is to produce a sincere and honest generation that is academically talented, ethically disciplined, and exemplary. The organization aims to create role models who are mature enough to serve Islam and their count
+            </p></li>
+            <li>
+                HUMSJ organizes various activities throughout the academic year, including lectures, seminars, and workshops on Islamic topics. The organization also encourages students to participate in community service activities such as blood donation drives, environmental clean-up campaigns, and charity events.
+            </li> 
+            <li>
+                HUMSJ provides a platform for Muslim students to connect with each other, share their experiences, and support each other through their academic journey. The organization also welcomes non-Muslim students who are interested in learning about Islam and its values.
+            </li> 
+            <p>
+                Overall, HUMSJ is committed to promoting Islamic values and principles among the students of Haramaya University and creating a positive impact on the community.
+            </p>
+        </li>
+    </ul>
+</section>
+
+<section id="Contact" class="contact-1">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, suggestions, or feedback, you can reach us through the provided contact informations.</p>
+    <p>Address: Gendeboy / Al-Nesr Masjid</p>
+    <p>telegram-group: <a href="https://t.me/humsjofficialchannel">HUMSJ</a> </p>
+    <p>Amir Phone-no: +251928780516</p>
+    <p>Vice-Amir Phone-no: +251901165103</p>
+</section>
+
+<footer>
+    &copy; 2024 HUMSJ. All rights reserved.
+</footer>
+
+</body>
+</html>
