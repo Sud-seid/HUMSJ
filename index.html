@@ -5,51 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUMSJ Webpage</title>
     <style>
-        body {
-    font-family: sans-serif;
-    margin: 0;
-    padding-bottom: 30px;
-    background-color:  white;
-    color: #0B260B;
-}
-h1{
-    color: #08612a;
-}
-h2{
-    color: #0c2808;
-}
-h4{
-    color:  #194B19;
-}
-header {
+     header {
     background-color: #194B19; 
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    /* position: sticky; */
-    top: 0;
-    z-index: 1000px;
     width: 100%;
 }
-.home-1{
+.home-1 {
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 20px;
 }
-header img{
+header img {
     padding-left: 0;
-    width: 84px;
-    height: 84px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
 nav {
-    background-color: #194B19;
-    color: black;
-    padding-right: 50px;
-    padding-top: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 nav a {
     color: #091609;
@@ -58,95 +37,102 @@ nav a {
 }
 .resources-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 40px;
 }
 .resource-item {
-    flex: 0 0 auto;
-    width: 180px;
-    height: 180px;
+    flex: 1 1 180px;
     margin: 10px;
     padding: 20px;
     text-align: center;
     border: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: #2C612C;
 }
-#resources{
-    width: 1000px;
-    height: 350px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+.resource-item h3 {
+    margin-top: 0;
 }
-.contact-1{
+#resources {
+    padding: 20px;
+    margin: 0 auto;
+}
+.contact-1 {
     text-align: center;
     margin-top: 20px;
     width: 100%;
     padding: 20px 20px;
     background-color: #effaf3e5;
-    /* margin-bottom: 0; */
     color: #061506;
 }
-li{
+li {
     padding-bottom: 10px;
 }
-.about-us{
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* .resources-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: sticky;
-} */
-.resource-item.rectangular {
-    border-radius: 5px;
+.about-us {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 section {
     padding: 20px;
     margin: 20px 0;
 }
-a:link{
-    color:#194B19;
+a:link {
+    color: #000000;
     text-decoration: none;
 }
-a:visited{
+a:visited {
     color: #0b290b;
 }
-a:hover{
+a:hover {
     color: rgba(0, 255, 255, 0.523);
     text-decoration: underline;
     font-weight: bold;
 }
-a:active{
+a:active {
     background-color: #548754;
     font-style: italic;
 }
 nav a:link {
     font-size: 15px;
-     /* margin-top: 5px;  */
-    margin-right: auto;
-    display: inline-block;
+    margin: 5px 10px;
 }
-.resources-container a{
+.resources-container a {
     color: #0b260b;
 }
 footer {
-    background-color:  #194B19;
+    background-color: #194B19;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header img {
+        margin-bottom: 10px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+    .home-1 {
+        padding: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .resource-item {
+        flex: 1 1 100%;
+    }
+    .about-us {
+        padding: 10px;
+    }
 }
     </style>
     <script src="script.js"></script>
@@ -165,8 +151,8 @@ footer {
 <section id="home" class="home-1">
     <h1>HARAMAYA UNIVERSITY MUSLIM STUDENT'S JEMA'A</h1>
     <p>Welcome to the HUMSJ webpage! Here you will find information about our mission, resources for learning, and our history.</p>
-    <p>Check out the <a href="#resources">Resources</a> section for useful links and study materials.</p>
-    <p>Learn more <a href="#about">About</a> us and our goals.</p>
+    <p>Check out the <a href="#resources" class="link-1">Resources</a> section for useful links and study materials.</p>
+    <p>Learn more <a href="#about" class="link-1">About</a> us and our goals.</p>
 </section>
 
 <section id="resources">
